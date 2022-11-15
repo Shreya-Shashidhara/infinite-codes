@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ticket Details</title>
+    <style>
+        div#maincontent {
+            height: 150px;
+            width: 500px;
+            border: 1px solid #CEE2FA;
+            text-align: left;
+            color: #08438E;
+            font-family: calibri;
+            font-size: 20;
+            padding: 5px;
+        }
+        div#heading {
+            text-decoration: bold;
+            text-align: center;
+            margin-top: 80px;
+            width: 500px;
+            border: 1px solid #CEE2FA;
+            text-align: center;
+            color: #08438E;
+            background-color: #CEE2FA;
+            font-family: calibri;
+            font-size: 20;
+            padding: 5px;
+        }
+        h4 {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div id="heading">
+            <b>Theatre Drama</b>
+        </div>
+        <div id="maincontent">
+            <h4>Your Ticket Details:</h4>
+            <br>
+            <script>
+                 let ticket_price = [9,9,9];  
+                 let discount = 10
+                 const [ticket_price1,ticket_price2,ticket_price3] = ticket_price;
+                 let total_price = ticket_price1+ticket_price2+ticket_price3
+                 let after_discount = total_price * (1-(discount/100))
+                 document.write("Total number of seats booked : "+ "3"+" </br>" )
+                 document.write("Total cost of 3 tickets : "+ "$" +(total_price) + "<br/>")
+                 document.write("Festive season discount is  : "+"10%"+"</br>")
+                 document.write("Total cost after discount is : "+ "$" +(after_discount) +"</br>")
+            </script>
+        </div>
+    </center>
+</body>
+</html>
