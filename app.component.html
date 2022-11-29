@@ -1,0 +1,11 @@
+<h1>Welcome</h1>
+<form [formGroup]="loginForm" (ngSubmit)="loginUser()">
+  <input type="text" name="username" formControlName ="username" placeholder="username"><br><br>
+  <span class="error" *ngIf="username?.invalid && username?.touched">Username is required.</span><br>
+  <input type="password" name="password" formControlName ="password" placeholder="password"><br><br>
+  <span class="error" *ngIf="password?.invalid && password?.touched">Password is required.</span><br>
+  <span class="error" *ngIf="username?.invalid || password?.invalid">Invalid Credentials</span><br>
+
+  <button type="submit">Login</button>
+
+</form>
